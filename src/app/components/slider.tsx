@@ -7,7 +7,8 @@ const items = [
   { id: 3, title: "Automate Your Ramadan", place: "Earn daily ajr", target: "", image: "https://pennyappeal.ca/wp-content/uploads/2024/03/hands-praynew.jpg" },
   { id: 4, title: "Gaza Emergency Response", place: "Gaza, Palestine", target: "https://pennyappeal.ca/project/gaza-emergency-response/", image: "https://pennyappeal.ca/wp-content/uploads/2024/09/1ynew.jpg" },
   { id: 2, title: "Sponsor an Orphan", place: "Palestine, Pakistan", target: "https://donate.pennyappeal.ca/program/orphankind/", image: "https://pennyappeal.ca/wp-content/uploads/2024/01/img4.jpg" },
-  { id: 5, title: "Volunteer Opportunities", place: "Get involved at Penny Appeal Canada", target: "https://pennyappeal.ca/about/team-orange/", image: "https://pennyappeal.ca/wp-content/uploads/2024/03/fow9new.jpg" },
+  { id: 5, title: "Donate Your Zakat", place: "100% Zakat Policy", target: "https://pennyappeal.ca/about/team-orange/", image: "https://pennyappeal.ca/wp-content/uploads/2024/03/fow9new.jpg" },
+  { id: 6, title: "Volunteer Opportunities", place: "Get involved at Penny Appeal Canada", target: "https://pennyappeal.ca/about/team-orange/", image: "https://pennyappeal.ca/wp-content/uploads/2024/03/volunteer4.jpg" },
 ];
 
 interface CardProps {

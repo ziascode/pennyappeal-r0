@@ -27,7 +27,7 @@ export default function Home() {
   return (
    <div>
 
-        <div className="flex flex-col  h-[150vh] bg-[#ef7c00]  align-bottom bg-gradient-to-b from-orange-500 to-orange-300  "> {/*  */}
+        <div className="flex flex-col  h-[160vh] bg-[#ef7c00]  align-bottom bg-gradient-to-b from-orange-500 to-orange-300  "> {/*  */}
             <div>
 
 
@@ -63,7 +63,7 @@ export default function Home() {
               {/*Slider */}
               <div id="slider">
               <SlidingCards className="hidden lg:block"/> 
-              <SliderMobile className="block lg:hidden" />    
+              <SliderMobile className="block lg:hidden pt-0" />    
               </div>
                            
             
