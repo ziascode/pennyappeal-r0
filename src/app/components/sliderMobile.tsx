@@ -17,7 +17,7 @@ interface CardProps {
   }
   
   const Card: React.FC<CardProps> = ({ image, title, target }) => (
-    <Link href={target}>
+    <Link href={target} target="_blank" rel="noopener noreferrer">
       <div
         className="max-w-sm p-7 mx-2 my-5 pt-20 min-w-[21vw] w-[45vw] h-[200px]  rounded-xl shadow-none dark:bg-gray-800 dark:border-gray-700 opacity-95 relative bg-cover bg-center transition-all duration-300 shadow-[0px_0px_8px_0px_rgba(0,_0,_0,_0.35)]  hover:shadow-xl hover:shadow-[0px_0px_0px_5px_#ffffff] hover:scale-[103%]"
         style={{ backgroundImage: `url(${image})` }}
