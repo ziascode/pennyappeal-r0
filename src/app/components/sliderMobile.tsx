@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from "react";
-import { motion, useAnimation, useMotionValue } from "framer-motion";
+import { motion} from "framer-motion";
 import Link from "next/link";
 
 const items = [
@@ -15,11 +14,10 @@ interface CardProps {
     title: string;
     place: string;
     target: string;
-    onHover?: () => void;
-    onLeave?: () => void;
   }
   
-  const Card: React.FC<CardProps> = ({ image, place, title, target, onHover, onLeave }) => (
+  const Card: React.FC<CardProps> = ({ image, place, title, target}) => (
+    <Link href={target}>
     <div
   className="max-w-sm p-7 mx-2 my-5 pt-20 min-w-[21vw] w-[45vw] border-gray-200 rounded-xl shadow-none shadow-slate-50 dark:bg-gray-800 dark:border-gray-700 opacity-95 relative bg-cover bg-center transition-all duration-300 hover:shadow-xl hover:shadow-[0px_0px_0px_5px_#ffffff] hover:scale-[103%]"
   style={{ backgroundImage: `url(${image})` }}
@@ -42,6 +40,7 @@ interface CardProps {
 
   </div>
 </div>
+</Link>
 
   );
   

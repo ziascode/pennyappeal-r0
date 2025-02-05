@@ -21,7 +21,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, place, title, target, onHover, onLeave }) => (
   <div
-    className="max-w-sm p-7 mx-2 my-5 pt-60 min-w-[21vw] w-[100vw] border-gray-200 rounded-xl shadow-none shadow-slate-50 dark:bg-gray-800 dark:border-gray-700 opacity-95 relative bg-cover bg-center transition-all duration-300 hover:shadow-xl hover:shadow-[0px_0px_0px_5px_#ffffff] hover:scale-[103%]"
+   className="max-w-sm p-7 mx-2 my-5 pt-60 min-w-[21vw] w-[100vw] border-gray-200 rounded-xl shadow-none shadow-slate-50 dark:bg-gray-800 dark:border-gray-700 opacity-95 relative bg-cover bg-center transition-all duration-300 hover:shadow-xl hover:shadow-[0px_0px_0px_5px_#fdfeff] hover:scale-[103%]"
     style={{ backgroundImage: `url(${image})` }}
     onMouseEnter={onHover}
     onMouseLeave={onLeave}
@@ -58,33 +58,34 @@ export default function Slider({ className }: { className?: string }) {
   const [isHovered, setIsHovered] = useState(false);
   const lastX = useRef(0);
   const lastVelocity = useRef(0);
-  const totalDistance = -1130; 
+  const totalDistance = -3130; 
 
-  useEffect(() => {
-    const startAnimation = (fromX: number, velocity: number = 0) => {
-      const baseDuration = 10;
-      const remainingDistance = totalDistance - fromX;
-      const adjustedDuration = (remainingDistance / totalDistance) * baseDuration;
+useEffect(() => {
+  const startAnimation = (fromX: number, velocity: number = 0) => {
+    const baseDuration = 25;
+    const remainingDistance = totalDistance - fromX;
+    const adjustedDuration = (remainingDistance / totalDistance) * baseDuration;
 
-      controls.start({
-        x: [fromX, totalDistance],
-        transition: { 
-          duration: adjustedDuration, 
-          ease: "linear", 
-          repeat: Infinity, 
-          velocity: velocity || undefined, // Maintain momentum
-        },
-      });
-    };
+    controls.start({
+      x: [fromX, totalDistance],
+      transition: { 
+        duration: adjustedDuration, 
+        ease: "linear", 
+        repeat: Infinity, 
+        velocity: velocity || undefined, // Maintain momentum
+      },
+    });
+  };
 
-    if (isHovered) {
-      lastX.current = x.get();
-      lastVelocity.current = x.getVelocity();
-      controls.stop();
-    } else {
-      startAnimation(lastX.current, lastVelocity.current);
-    }
-  }, [isHovered, controls, x]);
+  if (isHovered) {
+    lastX.current = x.get();
+    lastVelocity.current = x.getVelocity();
+    controls.stop();
+  } else {
+    startAnimation(lastX.current, lastVelocity.current);
+  }
+}, [isHovered, controls, x, totalDistance]); // ✅ Added totalDistance
+
 
   return (
     <div className={`${className} overflow-hidden w-full relative mx-auto`}>
