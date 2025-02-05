@@ -27,7 +27,7 @@ export default function Home() {
   return (
    <div>
 
-        <div className="flex flex-col  h-[160vh] bg-[#ef7c00]  align-bottom bg-gradient-to-b from-orange-500 to-orange-300  "> {/*  */}
+        <div className="flex flex-col  h-[130vh] bg-[#ef7c00]  align-bottom bg-gradient-to-b from-orange-500 to-orange-300  "> {/*  */}
             <div>
 
 
