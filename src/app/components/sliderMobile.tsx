@@ -6,7 +6,7 @@ const items = [
   { id: 3, title: "Automate Your Ramadan",  target:"", image: "https://pennyappeal.ca/wp-content/uploads/2024/03/hands-praynew.jpg" },
   { id: 4, title: "Gaza Emergency Response", target: "https://pennyappeal.ca/project/gaza-emergency-response/", image: "https://pennyappeal.ca/wp-content/uploads/2024/09/1ynew.jpg" },
   { id: 2, title: "Sponsor an Orphan", target:"https://donate.pennyappeal.ca/program/orphankind/", image: "https://pennyappeal.ca/wp-content/uploads/2024/01/img4.jpg" },
-  { id: 5, title: "Donate Your Zakat", target: "https://pennyappeal.ca/ramadan-2025/#zakat", image: "https://pennyappeal.ca/wp-content/uploads/2024/03/fow9new.jpg" },
+  { id: 5, title: "Donate Your Zakat", target: "https://pennyappeal.ca/program/zakat/", image: "https://pennyappeal.ca/wp-content/uploads/2024/03/fow9new.jpg" },
   { id: 6, title: "Volunteer With Us",  target: "https://pennyappeal.ca/about/team-orange/", image: "https://pennyappeal.ca/wp-content/uploads/2024/03/volunteer4.jpg" },
 ];
 
