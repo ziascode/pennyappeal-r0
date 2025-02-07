@@ -27,7 +27,7 @@ export default function Home() {
   return (
    <div>
 
-        <div className="flex flex-col  h-[130vh] bg-[#ef7c00]  align-bottom bg-gradient-to-b from-orange-500 to-orange-300  "> {/*  */}
+        <div className="flex flex-col  h-[110vh] bg-[#ef7c00]  align-bottom bg-gradient-to-b from-orange-500 to-orange-300  "> {/*  */}
             <div>
 
 
@@ -46,13 +46,13 @@ export default function Home() {
                       transition={{ duration: 0.8, ease: "easeOut" }}>Ramadan 2025 is approaching, and it is time to embark on a transformative spiritual journey to a month that is defined by unity, compassion, and selfless giving.</motion.h1>
                   </div>
                   <div className='flex justify-center pb-12 md:mb-20 gap-5'>
-                      <Link href="https://pennyappeal.ca/">
-                      <button className={` ${figtree700.className} shadow-xl mb-0 px-10 py-4 bg-white border-white-10 rounded-full hover:bg-[#042d49] hover:ease-in-out hover:duration-200 hover:text-white`}>DONATE</button>
+                      <Link href="https://donate.pennyappeal.ca/">
+                      <button className={` ${figtree700.className} shadow-xl mb-0 px-10 py-4 bg-white border-white-10 rounded-full hover:bg-[#042d49] hover:ease-in-out hover:duration-200 hover:text-white`}>DONATE TODAY</button>
                       </Link>
                       
-                      <button 
+                      {/* <button 
                        onClick={() => document.getElementById("slider")?.scrollIntoView({ behavior: "smooth" })} 
-                       className={` ${figtree700.className} shadow-xl mb-0 px-9 py-4 text-slate-800 border-gray-100 border-2 bg-opacity-10 border-white-10 rounded-full hover:bg-blue-950 hover:bg-opacity-25 hover:border-blue-950 hover:border-opacity-0 hover:text-white hover:ease-in-out hover:duration-200`}>EXPLORE</button>
+                       className={` ${figtree700.className} shadow-xl mb-0 px-9 py-4 text-slate-800 border-gray-100 border-2 bg-opacity-10 border-white-10 rounded-full hover:bg-blue-950 hover:bg-opacity-25 hover:border-blue-950 hover:border-opacity-0 hover:text-white hover:ease-in-out hover:duration-200`}>EXPLORE</button> */}
                       
                   </div>
                   
