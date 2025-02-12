@@ -22,7 +22,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, place, title, target, onHover, onLeave }) => (
   <div
-   className="max-w-sm p-7 mx-2 my-5 pt-60 min-w-[21vw] w-[100vw] border-gray-200 rounded-xl shadow-none shadow-slate-50 dark:bg-gray-800 dark:border-gray-700 opacity-95 relative bg-cover bg-center transition-all duration-300 hover:shadow-xl hover:shadow-[0px_0px_0px_5px_#fdfeff] hover:scale-[103%]"
+   className="max-w-sm p-7 mx-2 my-10 pt-60 min-w-[21vw] w-[100vw] border-gray-200 rounded-xl shadow-xl shadow-[0px_0px_15px_-9px_#063b70] dark:bg-gray-800 dark:border-gray-700 opacity-95 relative bg-cover bg-center transition-all duration-300 hover:shadow-xl hover:shadow-[0px_0px_15px_-9px_#063b70] hover:scale-[103%]"
     style={{ backgroundImage: `url(${image})` }}
     onMouseEnter={onHover}
     onMouseLeave={onLeave}
@@ -41,12 +41,12 @@ const Card: React.FC<CardProps> = ({ image, place, title, target, onHover, onLea
         </svg>
       </div>
       <div className="min-h-20">
-        <h5 className="max-w-48 mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white text-wrap">
+        <h5 className="max-w-48 mb-2 text-2xl font-semibold tracking-tight text-gray-100 text-wrap">
           {title}
         </h5>
       </div>
       <div className="flex justify-between">
-        <p className="mb-3 font-normal text-gray-500 dark:text-gray-300">{place}</p>
+        <p className="mb-3 font-normal text-gray-300">{place}</p>
         <Link href={`${target}`} target="_blank" rel="noopener noreferrer"><button className="py-3 px-5 bg-white rounded-full">Donate</button></Link>
       </div>
     </div>

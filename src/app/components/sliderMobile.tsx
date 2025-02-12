@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const items = [
   { id: 1, title: "Give Clean Water", target:"https://donate.pennyappeal.ca/program/thirst-relief/", image: "https://pennyappeal.ca/wp-content/uploads/2025/02/w3new.jpg" },
-  { id: 3, title: "Automate Your Ramadan",  target:"", image: "https://pennyappeal.ca/wp-content/uploads/2024/03/hands-praynew.jpg" },
+  { id: 3, title: "Automate Your Ramadan",  target:"https://pennyappeal.ca/auto-give/", image: "https://pennyappeal.ca/wp-content/uploads/2024/03/hands-praynew.jpg" },
   { id: 4, title: "Gaza Emergency Response", target: "https://pennyappeal.ca/project/gaza-emergency-response/", image: "https://pennyappeal.ca/wp-content/uploads/2024/09/1ynew.jpg" },
   { id: 2, title: "Sponsor an Orphan", target:"https://donate.pennyappeal.ca/program/orphankind/", image: "https://pennyappeal.ca/wp-content/uploads/2024/01/img4.jpg" },
   { id: 5, title: "Donate Your Zakat", target: "https://pennyappeal.ca/program/zakat/", image: "https://pennyappeal.ca/wp-content/uploads/2024/03/fow9new.jpg" },
@@ -17,9 +17,9 @@ interface CardProps {
   }
   
   const Card: React.FC<CardProps> = ({ image, title, target }) => (
-    <Link href={target} target="_blank" rel="noopener noreferrer">
+    <Link href={target} target="_blank" rel="noopener noreferrer" >
       <div
-        className="max-w-sm p-7 mx-2 my-5 pt-20 min-w-[21vw] w-[45vw] h-[200px]  rounded-xl shadow-none dark:bg-gray-800 dark:border-gray-700 opacity-95 relative bg-cover bg-center transition-all duration-300 shadow-[0px_0px_8px_0px_rgba(0,_0,_0,_0.35)]  hover:shadow-xl hover:shadow-[0px_0px_0px_5px_#ffffff] hover:scale-[103%]"
+        className="max-w-sm p-7 mx-2 my-3 pt-20 min-w-[21vw] w-[45vw] h-[200px]  rounded-xl shadow-none  dark:bg-gray-800 dark:border-gray-700 opacity-95 relative bg-cover bg-center transition-all duration-300 shadow-[0px_0px_18px_-8px_#05386b]  hover:shadow-xl hover:shadow-[0px_0px_0px_5px_#ffffff] hover:scale-[103%]"
         style={{ backgroundImage: `url(${image})` }}
       >
         <div className="absolute inset-x-0 bottom-0 h-[60%] bg-gradient-to-t from-gray-900 to-transparent opacity-90 rounded-b-xl z-0"></div>
@@ -33,7 +33,7 @@ interface CardProps {
   
           {/* Title container with a fixed height */}
           <div className="flex-grow flex items-end">
-            <h5 className="text-2xl font-semibold tracking-tight text-gray-900  dark:text-white text-wrap text-center leading-tight min-h-[3rem]">
+            <h5 className="text-2xl font-semibold tracking-tight text-gray-50 text-wrap text-center leading-tight min-h-[3rem]">
               {title}
             </h5>
           </div>
